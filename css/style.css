@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+html {
+    font-family: 'Dancing Script', cursive;
+    font-size: 67%;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    font-size: 2rem;
+    border: 1px solid gray;
+}
+
+.calculator-display {
+    padding:  25px 15px;
+    width: 94%;
+    text-align: right;
+    border: 1px solid gray;
+    overflow-x: auto;
+}
+
+.calculator-keypad {
+    display: flex;
+    width: 100%;
+}
+
+.keypad-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.keypad-button {
+    width: 24.6%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.keypad-button:hover {
+    filter: brightness(80%);
+    transition: filter .25s;
+}
+
+.keypad-button.yellow {
+    background-color: yellow;
+}
+
+.keypad-button.large {
+    width: 49.6%;
+}
